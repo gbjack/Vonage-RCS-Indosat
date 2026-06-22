@@ -1,10 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
 import headerDTP from "../assets/images/header-c.jpg";
 import vonageLogo from "../assets/images/Vonage_logo.svg";
-import googleLogo from "../assets/images/google-logo-transparent.png";
-import singTelLogo from "../assets/images/Singtel_white.png";
+import Form from "../components/CM-Form.astro";
+import { Image } from "astro:assets";
 import speaker1 from "../assets/images/Speaker_DavidBenjamin.jpg";
 import speaker2 from "../assets/images/Speaker_Mahendra.jpg";
 import venue1 from "../assets/images/OPCJ-dining-newoakbar.jpg";
@@ -88,7 +87,7 @@ import venue6 from "../assets/images/OPCJ-The-Batavia-Pour.webp";
         <section>
             <div class="container">
                 <h2>
-                    Join us in Jakata for the first dedicated Vonage RCS (Rich
+                    Join us in Jakarta for the first dedicated Vonage RCS (Rich
                     Communication Services) event in APAC.
                 </h2>
                 <p>
@@ -220,204 +219,11 @@ import venue6 from "../assets/images/OPCJ-The-Batavia-Pour.webp";
                         </div>
                     </div>
                     <div class="w-full" id="registration-form">
-                        <div
-                            class="w-full px-6 py-10 sm:py-12 rounded-2xl bg-gray-3"
-                        >
+                        <div class="w-full px-6 py-10 sm:py-12 rounded-2xl bg-gray-3">
                             <div class="pb-2 sm:pb-4">
                                 <h2>Register here</h2>
                             </div>
-                            <form
-                                class="js-cm-form"
-                                id="subForm"
-                                action="https://www.createsend.com/t/subscribeerror?description="
-                                method="post"
-                                data-id="191722FC90141D02184CB1B62AB3DC264E447864977B16BD6C39AEC0ECE3E6CC82ADEFE961779B23BFA73FF43059EBFCEC6F8C719E4E79C0AF4E3FEDCCD6F653"
-                            >
-                                <div class="flex flex-col gap-y-4 sm:gap-y-6">
-                                    <div>
-                                        <label for="fieldName"
-                                            >First Name<!-- -->
-                                        </label>
-                                        <input
-                                            id="fieldName"
-                                            maxlength="200"
-                                            name="cm-name"
-                                            placeholder=""
-                                            required=""
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="fieldtdcfl"
-                                            >Last Name<!-- -->
-                                        </label>
-                                        <input
-                                            id="fieldtdcfl"
-                                            maxlength="200"
-                                            name="cm-f-tdcfl"
-                                            required=""
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="fieldtdcfr"
-                                            >Company Name<!-- -->
-                                        </label>
-                                        <input
-                                            id="fieldtdcfr"
-                                            maxlength="200"
-                                            name="cm-f-tdcfr"
-                                            required=""
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="fieldtdcfy"
-                                            >Job Title<!-- -->
-                                        </label>
-                                        <input
-                                            id="fieldtdcfy"
-                                            maxlength="200"
-                                            name="cm-f-tdcfy"
-                                            required=""
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="fieldEmail"
-                                            >Email<!-- -->
-                                        </label>
-                                        <input
-                                            autocomplete="Email"
-                                            class="js-cm-email-input qa-input-email"
-                                            id="fieldEmail"
-                                            maxlength="200"
-                                            name="cm-tdlkykt-tdlkykt"
-                                            placeholder=""
-                                            required=""
-                                            type="email"
-                                        />
-                                    </div>
-
-                                    <div
-                                        class="flex flex-col lg:flex-row gap-2 space-y-4"
-                                    >
-                                        <div class="shrink-0">
-                                            <label for="countryCode"
-                                                >Country Code<!-- -->
-                                            </label>
-                                            <span>
-                                                <select
-                                                    id="fieldtdcfi"
-                                                    name="cm-fo-tdcfi"
-                                                    required=""
-                                                >
-                                                    <option disabled="" value="" selected>ID</option>
-                                                    <option
-                                                        value="2453813"
-                                                        >+65 (SG)</option
-                                                    >
-                                                    <option value="2453814"
-                                                        >+60 (MY)</option
-                                                    >
-                                                    <option value="2453815"
-                                                        >+62 (ID)</option
-                                                    >
-                                                    <option value="2453816"
-                                                        >+63 (PH)</option
-                                                    >
-                                                    <option value="2453817"
-                                                        >+66 (TH)</option
-                                                    >
-                                                    <option value="2453818"
-                                                        >+84 (VN)</option
-                                                    >
-                                                    <option value="2453822"
-                                                        >+86 (CN)</option
-                                                    >
-                                                    <option value="2453823"
-                                                        >+852 (HK)</option
-                                                    >
-                                                    <option value="2453824"
-                                                        >+61 (AU)</option
-                                                    >
-                                                    <option value="2453825"
-                                                        >+64 (NZ)</option
-                                                    >
-                                                    <option value="2453826"
-                                                        >+91 (IN)</option
-                                                    >
-                                                    <option value="2453827"
-                                                        >+81 (JP)</option
-                                                    >
-                                                    <option value="2453819"
-                                                        >+82 (KR)</option
-                                                    >
-                                                    <option value="2453820"
-                                                        >+1 (US/CA)</option
-                                                    >
-                                                    <option value="2453821"
-                                                        >+44 (UK)</option
-                                                    >
-                                                </select>
-                                            </span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <label for="fieldtdcfd"
-                                                >Phone Number<!-- -->
-                                            </label>
-                                            <input
-                                                id="fieldtdcfd"
-                                                maxlength="200"
-                                                name="cm-f-tdcfd"
-                                                required=""
-                                                type="number"
-                                                class="no-number-spinner"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label for="fieldtdczj"
-                                            >Dietary Requirements<!-- -->
-                                        </label>
-                                        <input
-                                            id="fieldtdczj"
-                                            maxlength="200"
-                                            name="cm-f-tdczj"
-                                            placeholder="e.g., Vegetarian, Vegan, Gluten-free, etc."
-                                            required=""
-                                        />
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="flex items-start gap-2">
-                                            <input
-                                                aria-required="false"
-                                                id="cm-privacy-email"
-                                                name="cm-privacy-email"
-                                                type="checkbox"
-                                                class="mt-0.5 shrink-0 rounded border-black text-black focus:ring-gray-500 size-5"
-                                            /><label for="cm-privacy-email">
-                                                By checking this box, you agree
-                                                to be contacted via phone and
-                                                email regarding your interest in
-                                                our products and services. We
-                                                will treat your data in
-                                                accordance with our privacy
-                                                policy.
-                                            </label>
-                                        </div>
-                                        <input
-                                            id="cm-privacy-email-hidden"
-                                            name="cm-privacy-email-hidden"
-                                            type="hidden"
-                                            value="true"
-                                        />
-                                    </div>
-                                </div>
-                                <button class="mt-3" type="submit"
-                                    >Register Now</button
-                                >
-                            </form>
-                            <script
-                                type="text/javascript"
-                                src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"
-                            ></script>
+                            <Form />
                         </div>
                     </div>
                 </div>
