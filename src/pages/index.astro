@@ -8,12 +8,12 @@ import singTelLogo from "../assets/images/Singtel_white.png";
 import speaker1 from "../assets/images/no_image_found.png";
 import speaker2 from "../assets/images/no_image_found.png";
 import speaker3 from "../assets/images/no_image_found.png";
-import venue1 from "../assets/images/no_image_found.png";
-import venue2 from "../assets/images/no_image_found.png";
-import venue3 from "../assets/images/no_image_found.png";
-import venue4 from "../assets/images/no_image_found.png";
-import venue5 from "../assets/images/no_image_found.png";
-import venue6 from "../assets/images/no_image_found.png";
+import venue1 from "../assets/images/OPCJ-dining-newoakbar.jpg";
+import venue2 from "../assets/images/OPCJ-dining-newoakbar2.jpg";
+import venue3 from "../assets/images/OPCJ-dining-Oakroom-Restaurant-Bar.jpg";
+import venue4 from "../assets/images/OPCJ-Flavour-of-Batavia.webp";
+import venue5 from "../assets/images/OPCJ-lounge.jpg";
+import venue6 from "../assets/images/OPCJ-The-Batavia-Pour.webp";
 ---
 
 <Layout>
@@ -46,7 +46,7 @@ import venue6 from "../assets/images/no_image_found.png";
                             layout="constrained"
                             decoding="async"
                             loading="eager"
-                            class="w-[clamp(96px,54.88px+10.5vw,160px)] h-auto transition-transform duration-300 hover:scale-105"
+                            class="w-35 md:w-45 h-auto transition-transform duration-300 hover:scale-105"
                         />
                     </div>
                     <div
@@ -62,7 +62,7 @@ import venue6 from "../assets/images/no_image_found.png";
                             <div
                                 class="flex flex-row items-center gap-4 sm:gap-6 grow h-auto"
                             >
-                                <div class="shrink-0">
+                                <div class="shrink">
                                     <Image
                                         src={googleLogo}
                                         alt="Google logo"
@@ -71,10 +71,10 @@ import venue6 from "../assets/images/no_image_found.png";
                                         layout="constrained"
                                         decoding="async"
                                         loading="eager"
-                                        class="w-[clamp(64px,22.88px+10.5vw,128px)] h-auto transition-transform duration-300 hover:scale-105"
+                                        class="w-15 md:w-25 h-auto transition-transform duration-300 hover:scale-105"
                                     />
                                 </div>
-                                <div class="shrink-0">
+                                <div class="shrink">
                                     <Image
                                         src={singTelLogo}
                                         alt="SingTel logo"
@@ -83,7 +83,7 @@ import venue6 from "../assets/images/no_image_found.png";
                                         layout="constrained"
                                         decoding="async"
                                         loading="eager"
-                                        class="w-[clamp(59.2px,33.92px+7.57vw,96px)] h-auto mb-2 sm:mb-3.5 transition-transform duration-300 hover:scale-105"
+                                        class="w-12 md:w-20 h-auto mb-3 md:mb-4 transition-transform duration-300 hover:scale-105"
                                     />
                                 </div>
                             </div>
@@ -105,16 +105,15 @@ import venue6 from "../assets/images/no_image_found.png";
                         class="font-sans text-[clamp(16px,13.84px+0.602vw,20px)] text-white font-normal"
                     >
                         <div class="py-8">
-                            <span>June 2026</span>
+                            <span>July 2026</span>
                             <br />
                             <a
-                                href="https://www.vonage.com/"
+                                href="https://www.discoverasr.com/en/oakwood/indonesia/oakwood-premier-cozmo-jakarta/dining"
                                 target="_blank"
                                 class="border-b border-white hover:border-transparent transition-colors duration-300 cursor-pointer"
                             >
-                                Jarkata
+                                Oakroom Restaurant & Bar
                             </a>
-                            <!-- <br>1 Raffles Place, L62, Singapore 048616 -->
                         </div>
                         <a
                             href="#registration-form"
@@ -470,27 +469,55 @@ import venue6 from "../assets/images/no_image_found.png";
         </section>
         <section>
             <div class="container text-center">
-                <h3>Outline Agenda</h3>
-                <p>
-                    <span class="font-bold">
+                <div data-usal="fade-u duration-300">
+                    <h3>Outline Agenda</h3>
+                    <h4 class="font-bold">
                         A structured day of insights, demos, and networking
-                    </span>
-                    <br />
-                    Agenda is subject to change. Timings and sessions may be adjusted
-                    if necessary.
-                </p>
-                <div
-                    class="border h-160 flex items-center justify-center mt-12"
-                    data-usal="fade-u duration-300 delay-200"
-                >
-                    <h2>TBA</h2>
+                    </h4>
+                    <p>
+                        Agenda is subject to change. Timings and sessions may be adjusted if necessary.
+                    </p>
+                </div>
+                <div class="w-full pt-4 md:pt-6" data-usal="fade-u duration-300 delay-200">
+                    <div class="flex flex-col md:flex-row items-center gap-0 md:gap-4 px-4 py-8 rounded-lg hover:bg-gray-1 transition-colors duration-500">
+                        <h4 class="text-black font-semibold text-nowrap text-sm md:text-base leading-none m-0">10:00 - 10:30</h4>
+                        <h4 class="text-black font-semibold text-base md:text-lg leading-none m-0">Registration & Welcome Refreshments</h4>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-0 md:gap-4 px-4 py-8 rounded-lg hover:bg-gray-1 transition-colors duration-500">
+                        <h4 class="text-black font-semibold text-nowrap text-sm md:text-base leading-none m-0">10:30 - 10:30</h4>
+                        <h4 class="text-black font-semibold text-base md:text-lg leading-none m-0">Opening Remarks</h4>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-0 md:gap-4 px-4 py-8 rounded-lg hover:bg-gray-1 transition-colors duration-500">
+                        <h4 class="text-black font-semibold text-nowrap text-sm md:text-base leading-none m-0">10:45 - 11:15</h4>
+                        <h4 class="text-black font-semibold text-base md:text-lg leading-none m-0">Vonage Global RCS Market Update</h4>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-0 md:gap-4 px-4 py-8 rounded-lg hover:bg-gray-1 transition-colors duration-500">
+                        <h4 class="text-black font-semibold text-nowrap text-sm md:text-base leading-none m-0">11:15 - 11:45</h4>
+                        <h4 class="text-black font-semibold text-base md:text-lg leading-none m-0">Singtel Keynote: RCS Innovation in APAC</h4>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-0 md:gap-4 px-4 py-8 rounded-lg hover:bg-gray-1 transition-colors duration-500">
+                        <h4 class="text-black font-semibold text-nowrap text-sm md:text-base leading-none m-0">11:45 - 12:00</h4>
+                        <h4 class="text-black font-semibold text-base md:text-lg leading-none m-0">Coffee Break</h4>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-0 md:gap-4 px-4 py-8 rounded-lg hover:bg-gray-1 transition-colors duration-500">
+                        <h4 class="text-black font-semibold text-nowrap text-sm md:text-base leading-none m-0">12:00 - 12:45</h4>
+                        <h4 class="text-black font-semibold text-base md:text-lg leading-none m-0">Vonage Live RCS Demo</h4>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-0 md:gap-4 px-4 py-8 rounded-lg hover:bg-gray-1 transition-colors duration-500">
+                        <h4 class="text-black font-semibold text-nowrap text-sm md:text-base leading-none m-0">12:45 - 13:15</h4>
+                        <h4 class="text-black font-semibold text-base md:text-lg leading-none m-0">Q&A</h4>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-0 md:gap-4 px-4 py-8 rounded-lg hover:bg-gray-1 transition-colors duration-500">
+                        <h4 class="text-black font-semibold text-nowrap text-sm md:text-base leading-none m-0">13:15 - 15:00</h4>
+                        <h4 class="text-black font-semibold text-base md:text-lg leading-none m-0">Lunch & Networking</h4>
+                    </div>
                 </div>
             </div>
         </section>
         <section
             class="bg-linear-to-br from-gray-3/10 via-white to-gray-1 py-20"
         >
-            <div class="container text-center mySpace-y">
+            <div class="container text-center mySpace-y" data-usal="fade-u duration-300">
                 <h3>Meet Our Expert Speakers</h3>
                 <p>
                     Industry leaders sharing insights on the future of RCS
@@ -615,16 +642,17 @@ import venue6 from "../assets/images/no_image_found.png";
         >
             <div class="container text-center mySpace-y">
                 <h3>Venue</h3>
-                <p>
+                <h4 class="font-bold">
                     <a
-                        href="https://www.vonage.com/"
+                        href="https://www.discoverasr.com/en/oakwood/indonesia/oakwood-premier-cozmo-jakarta/dining"
                         target="_blank"
                         class="border-b border-black hover:border-transparent transition-colors duration-300 cursor-pointer"
                     >
-                        TBC
+                        Oakroom Restaurant &amp; Bar
                     </a>
-                    <br />
-                    Address to be updated
+                </h4>
+                <p class="w-full md:w-1/2 pb-4 mx-auto">
+                    Jl. DR. Ide Anak Agung Gde Agung No.1 1, RT.5/RW.2, Kuningan, Mega Kuningan, Setiabudi, Jakarta, 12950, Indonesia
                 </p>
                 <div
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
