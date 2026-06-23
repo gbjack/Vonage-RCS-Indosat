@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import headerDTP from "../assets/images/header-c.jpg";
-import vonageLogo from "../assets/images/Vonage_logo.svg";
 import Form from "../components/CM-Form.astro";
 import { Image } from "astro:assets";
+import headerDTP from "../assets/images/header-c.jpg";
+import vonageLogo from "../assets/images/Vonage_logo.svg";
 import speaker1 from "../assets/images/Speaker_DavidBenjamin.jpg";
 import speaker2 from "../assets/images/Speaker_Mahendra.jpg";
 import venue1 from "../assets/images/OPCJ-dining-newoakbar.jpg";
@@ -53,10 +53,9 @@ import venue6 from "../assets/images/OPCJ-The-Batavia-Pour.webp";
                     class="relative z-10 h-[calc(100%-56px)] sm:h-[calc(100%-88px)] flex flex-col justify-center"
                 >
                     <div>
-                        <h1
-                            class="w-fit max-w-full sm:max-w-[70%] md:max-w-[60%]"
-                        >
-                            The Future of Messaging in APAC:
+                        <span class=" font-sans text-white text-lg md:text-3xl lg:text-3xl font-normal tracking-tight leading-0">The Future of Messaging in APAC:</span>
+                        <h1 class="w-fit max-w-full sm:max-w-[70%] md:max-w-[80%] leading-none tracking-tighter mt-2 md:mt-4">
+                            How RCS Will Transform Brand Engagement
                         </h1>
                     </div>
                     <div
@@ -70,8 +69,9 @@ import venue6 from "../assets/images/OPCJ-The-Batavia-Pour.webp";
                                 target="_blank"
                                 class="border-b border-white hover:border-transparent transition-colors duration-300 cursor-pointer"
                             >
-                                Oakroom Restaurant
-                            </a>
+                                Oakroom Restaurant,
+                            </a><br>
+                            <span>Jakarta, Indonesia</span>
                         </div>
                         <a
                             href="#registration-form"
