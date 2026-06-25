@@ -10,11 +10,11 @@ interface Props {
 const { 
   title = "The Future of Messaging in APAC", 
   description = "Join us in Jakarta for the first dedicated Vonage RCS (Rich Communication Services) event in APAC. Don't miss out. Register Now.",
-  image = "/images/meta-tags.png" /* TO BE UPDATED */
+  image = "https://indosat.vonagefuturesecure.com/images/21-meta-tags.png"
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://vonage-events.com"); /* TO BE UPDATED */
-const imageURL = new URL(image, Astro.site || "https://vonage-events.com"); /* TO BE UPDATED */
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://indosat.vonagefuturesecure.com/"); /* TO BE UPDATED */
+const imageURL = new URL(image, Astro.site || "https://indosat.vonagefuturesecure.com/"); /* TO BE UPDATED */
 ---
 
 <!doctype html>
